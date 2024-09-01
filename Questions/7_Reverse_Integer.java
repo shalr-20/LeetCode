@@ -3,10 +3,10 @@ class Solution {
         int res = 0;
         boolean isNeg = x < 0;
         String a = String.valueOf(Math.abs(x));
-        StringBuilder ab = new StringBuilder(a).reverse();
+        StringBuilder sb = new StringBuilder(a).reverse();
 
         try {
-            res = Integer.parseInt(ab.toString());
+            res = Integer.parseInt(sb.toString());
         } catch (NumberFormatException e) {
             return 0;
         }
