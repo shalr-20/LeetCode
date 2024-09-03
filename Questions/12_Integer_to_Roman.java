@@ -1,8 +1,6 @@
 class Solution {
     public String intToRoman(int num) {
         StringBuilder str = new StringBuilder();
-
-        // Start with the largest possible values and work down
         if (num >= 1000) {
             while (num >= 1000) {
                 str.append("M");
